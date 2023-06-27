@@ -8,6 +8,7 @@ This project is a firefighting robot that is designed to detect and extinguish f
 - [Getting Started](#getting-started)
 - [Project Functions](#project-functions)
 - [Components](#components)
+- [Circuit](#circuit)
 - [Usage](#usage)
 
 ## Features
@@ -28,8 +29,7 @@ To get started with the firefighter robot, follow these steps:
 4. In the Arduino Bluetooth Control program, choose the name of the robot from the available devices.
 5. Go to the settings menu in the program to modify the mechanism of action for the buttons. Specify what each button should send to the robot. This configuration determines the robot's movements and activates various functions. Refer to the "Explanation of Project Functions" section for more details on each function and its associated commands.
 6. After configuring the buttons, you can switch between two modes: automatic mode and manual mode. To activate the automatic mode, send the command "A" in the command list. To activate the manual mode, send the command "M". Note that all commands should be uppercase letters.
-7. The program will provide a response indicating the successful switch to the automatic mode or the manual mode. Follow the instructions in the "Explanation of Project Functions" section to learn more about using the robot in each mode.
-8. Make sure to follow the safety precautions and guidelines provided in the user manual before operating the firefighter robot.
+7. The program will provide a response indicating the successful switch to the automatic mode or the manual mode. Follow the instructions in the [Project Functions](#project-functions) section to learn more about using the robot in each mode.
 
 ## Project Functions
 
@@ -57,6 +57,10 @@ The firefighter robot offers several functions that can be controlled through th
 - 1 * NPN Transistor
 - 1 * Rechargeable Battery 11.1V
 - 1 * 4 DC Geared Motor & 4 Wheel
+
+## Circuit
+
+![Circuit Diagram](Circuit.jpg)
 
 ## Usage
 
