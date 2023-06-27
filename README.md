@@ -6,9 +6,9 @@ This project is a firefighting robot that is designed to detect and extinguish f
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Project Functions](#project-functions)
 - [Components](#components)
 - [Circuit](#circuit)
+- [Project Functions](#project-functions)
 - [Usage](#usage)
 
 ## Features
@@ -30,20 +30,7 @@ To get started with the firefighter robot, follow these steps:
 5. Go to the settings menu in the program to modify the mechanism of action for the buttons. Specify what each button should send to the robot. This configuration determines the robot's movements and activates various functions. Refer to the "Explanation of Project Functions" section for more details on each function and its associated commands.
 6. After configuring the buttons, you can switch between two modes: automatic mode and manual mode. To activate the automatic mode, send the command "A" in the command list. To activate the manual mode, send the command "M". Note that all commands should be uppercase letters.
 7. The program will provide a response indicating the successful switch to the automatic mode or the manual mode. Follow the instructions in the [Project Functions](#project-functions) section to learn more about using the robot in each mode.
-
-## Project Functions
-
-The firefighter robot offers several functions that can be controlled through the user interface. Here's a brief explanation of each function and its associated commands:
-
-- **CarControl**: This function controls the movement of the robot car. Use the following commands: 'F' for forward, 'B' for backward, 'R' for turn right, 'L' for turn left.
-- **SetMotorSpeed**: This function sets the speed of the robot car's engines. Use the following commands: "P" to increase speed, "N" to decrease speed.
-- **ServoControl**: This function controls the servo motor used to direct the fire extinguisher. Use the following commands: "-" to move the servo motor to the right, "+" to move the servo motor to the left.
-- **PumpControl**: This function controls the fire pump and bell. Use the following commands: "W" to turn on the pump and buzzer, "V" to turn off the pump and buzzer.
-- **SetPumpSpeed**: This function sets the speed of the fire pump. Use the following commands: "Z" to increase pump speed.
-- **SetMode**: This function sets the robot's operating mode (either manual or automatic). Use the following commands: "A" for automatic mode, "M" for manual mode.
-- **ExtinguishFire**: This function extinguishes the fire in the specified direction. It takes the angle of rotation of the servo motor as the input parameter 'dir'. The servo motor moves to the specified direction, turns on the pump and whistle to spray the fire extinguisher, and then turns them off after a short delay.
-- **DetectFire**: This function detects the presence of fire using the flame sensor connected to the specified input "sensor".
-- **CarStop**: This function stops the robot car.
+8. Get stucked? watch [tutorial video](https://www.youtube.com/watch?v=lhYTWBFQM98).
 
 ## Components
 
@@ -61,6 +48,20 @@ The firefighter robot offers several functions that can be controlled through th
 ## Circuit
 
 ![Circuit Diagram](Circuit.png)
+
+## Project Functions
+
+The firefighter robot offers several functions that can be controlled through the user interface. Here's a brief explanation of each function and its associated commands:
+
+- **CarControl**: This function controls the movement of the robot car. Use the following commands: 'F' for forward, 'B' for backward, 'R' for turn right, 'L' for turn left.
+- **SetMotorSpeed**: This function sets the speed of the robot car's engines. Use the following commands: "P" to increase speed, "N" to decrease speed.
+- **ServoControl**: This function controls the servo motor used to direct the fire extinguisher. Use the following commands: "-" to move the servo motor to the right, "+" to move the servo motor to the left.
+- **PumpControl**: This function controls the fire pump and bell. Use the following commands: "W" to turn on the pump and buzzer, "V" to turn off the pump and buzzer.
+- **SetPumpSpeed**: This function sets the speed of the fire pump. Use the following commands: "Z" to increase pump speed.
+- **SetMode**: This function sets the robot's operating mode (either manual or automatic). Use the following commands: "A" for automatic mode, "M" for manual mode.
+- **ExtinguishFire**: This function extinguishes the fire in the specified direction. It takes the angle of rotation of the servo motor as the input parameter 'dir'. The servo motor moves to the specified direction, turns on the pump and whistle to spray the fire extinguisher, and then turns them off after a short delay.
+- **DetectFire**: This function detects the presence of fire using the flame sensor connected to the specified input "sensor".
+- **CarStop**: This function stops the robot car.
 
 ## Usage
 
