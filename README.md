@@ -60,7 +60,7 @@ The firefighter robot offers several functions that can be controlled through th
 
 ## Circuit
 
-![Circuit Diagram](Circuit.jpg)
+![Circuit Diagram](Circuit.png)
 
 ## Usage
 
