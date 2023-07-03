@@ -20,7 +20,7 @@ To get started with the firefighter robot, follow these steps:
 1. Assemble the components together as shown in the circuit diagram:
 ![Circuit Diagram](Circuit.png)
 
-2.Components
+2. Components:
 	- 1 * Arduino Uno
 	- 1 * Motor Driver L298N
 	- 1 * BlueTooth Module HC-05/HC-06
