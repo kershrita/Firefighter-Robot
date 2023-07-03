@@ -4,12 +4,52 @@ This project is a firefighting robot that is designed to detect and extinguish f
 
 ## Table of Contents
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Components](#components)
-- [Circuit](#circuit)
-- [Project Functions](#project-functions)
+- [Installation](#installation)
 - [Usage](#usage)
+- [Features](#features)
+- [Project Functions](#project-functions)
+- [Acknowledgments](#acknowledgments)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Installation
+
+To get started with the firefighter robot, follow these steps:
+
+1. Assemble the components together as shown in the circuit diagram:
+![Circuit Diagram](Circuit.png)
+
+2.Components
+	- 1 * Arduino Uno
+	- 1 * Motor Driver L298N
+	- 1 * BlueTooth Module HC-05/HC-06
+	- 3 * Flame Sensor Medule
+	- 1 * Servo Motor 0:180 degree
+	- 1 * Water Pump 12V
+	- 1 * Buzzer
+	- 1 * NPN Transistor
+	- 1 * Rechargeable Battery 11.1V
+	- 1 * 4 DC Geared Motor & 4 Wheel
+
+3. Clone or Download the repository to your local machine using the following command:
+```
+git clone https://github.com/kershrita/Firefighter-Robot.git
+```
+4. Open your Arduino IDE.
+5. Select board, in our case Arduino Uno.
+7. Connect Arduino Uno to the computer then upload the code.
+
+## Usage
+
+1. Press the circle key to turn on the robot.
+2. Open the Bluetooth settings on your mobile phone and search for the name of the robot, which is usually HC06. Select the robot and enter the password, which is 1234.
+3. Once connected to the robot, open the Arduino Bluetooth Control program on your mobile phone.
+4. In the [Arduino Bluetooth Control](https://play.google.com/store/apps/details?id=com.broxcode.arduinobluetoothfree&hl=en) mobile app, choose the name of the robot from the available devices.
+5. Go to the settings menu in the program to modify the mechanism of action for the buttons. Specify what each button should send to the robot. This configuration determines the robot's movements and activates various functions. Refer to the "Explanation of Project Functions" section for more details on each function and its associated commands.
+6. After configuring the buttons, you can switch between two modes: automatic mode and manual mode. To activate the automatic mode, send the command "A" in the command list. To activate the manual mode, send the command "M". Note that all commands should be uppercase letters.
+7. The program will provide a response indicating the successful switch to the automatic mode or the manual mode. Follow the instructions in the [Project Functions](#project-functions) section to learn more about using the robot in each mode.
+8. Get stucked? watch [tutorial video](https://www.youtube.com/watch?v=lhYTWBFQM98).
 
 ## Features
 
@@ -19,35 +59,6 @@ This project is a firefighting robot that is designed to detect and extinguish f
 - **User interface**: The robot features a user interface that allows the user to monitor the system's status and control its operation.
 - **Buzzer alarm**: The robot includes a Buzzer component that generates an audible alarm to alert users in case of fire detection.
 
-## Getting Started
-
-To get started with the firefighter robot, follow these steps:
-
-1. Press the circle key to turn on the robot.
-2. Open the Bluetooth settings on your mobile phone and search for the name of the robot, which is usually HC06. Select the robot and enter the password, which is 1234.
-3. Once connected to the robot, open the Arduino Bluetooth Control program on your mobile phone.
-4. In the Arduino Bluetooth Control program, choose the name of the robot from the available devices.
-5. Go to the settings menu in the program to modify the mechanism of action for the buttons. Specify what each button should send to the robot. This configuration determines the robot's movements and activates various functions. Refer to the "Explanation of Project Functions" section for more details on each function and its associated commands.
-6. After configuring the buttons, you can switch between two modes: automatic mode and manual mode. To activate the automatic mode, send the command "A" in the command list. To activate the manual mode, send the command "M". Note that all commands should be uppercase letters.
-7. The program will provide a response indicating the successful switch to the automatic mode or the manual mode. Follow the instructions in the [Project Functions](#project-functions) section to learn more about using the robot in each mode.
-8. Get stucked? watch [tutorial video](https://www.youtube.com/watch?v=lhYTWBFQM98).
-
-## Components
-
-- 1 * Arduino Uno
-- 1 * Motor Driver L298N
-- 1 * BlueTooth Module HC-05/HC-06
-- 3 * Flame Sensor Medule
-- 1 * Servo Motor 0:180 degree
-- 1 * Water Pump 12V
-- 1 * Buzzer
-- 1 * NPN Transistor
-- 1 * Rechargeable Battery 11.1V
-- 1 * 4 DC Geared Motor & 4 Wheel
-
-## Circuit
-
-![Circuit Diagram](Circuit.png)
 
 ## Project Functions
 
@@ -63,9 +74,23 @@ The firefighter robot offers several functions that can be controlled through th
 - **DetectFire**: This function detects the presence of fire using the flame sensor connected to the specified input "sensor".
 - **CarStop**: This function stops the robot car.
 
-## Usage
+## Acknowledgments
 
-The firefighter robot can be operated in different modes depending on the situation. Here are a few examples:
+We would like to acknowledge the following resources and libraries that have been instrumental in developing Heart Rate and SpO2 Measurement:
 
-- **Autonomous mode**: The robot navigates through the environment, detects fires, and extinguishes them automatically. This mode is suitable for unattended firefighting operations.
-- **Manual mode**: An operator controls the robot remotely using [Arduino Bluetooth Control](https://play.google.com/store/apps/details?id=com.broxcode.arduinobluetoothfree&hl=en) mobile app.
+- **[Arduino IDE](https://www.arduino.cc/en/software)**:  An open-source integrated development environment (IDE) used for programming Arduino boards.
+
+
+## Contributing
+
+Thank you for considering contributing to the Firefighter Robot! We welcome any contributions that can enhance the program and make it even better.
+
+## License
+
+Firefighter Robot is released under the [MIT License](LICENSE).
+
+## Contact
+
+- Mail: ashrafabdulkhaliq80@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ashraf-abdulkhaliq
+- GitHub: https://github.com/kershrita
